@@ -5,9 +5,8 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const PORT = 3004;
 
-const Profile = require('./models/Profile');
-
-const profilesRoute = require('./routes/profiles');
+const User = require('./models/User');
+const userRoute = require('./routes/user');
 
 //require('dotenv/config');
 require('dotenv').config();
@@ -15,7 +14,7 @@ require('dotenv').config();
 //middleware
 app.use(bodyParser.json());
 app.use(cors());
-app.use('/profiles', profilesRoute);
+app.use('/user', userRoute);
 
 //Routes
 app.get('/', (req, res, next) => {
@@ -125,7 +124,8 @@ app.get('/', (req, res, next) => {
 //You don’t need “dotenv” to read the environment variables. Set the variables in your .bash_profile you should be able to see that process.env.MYAPIKEY no problem.
 mongoose.connect(
     process.env.DB_CONNECTION, {
-        useNewUrlParser: true
+        useNewUrlParser: true,
+        useUnifiedTopology: true
     },
     () => {
         console.log('connected to cloud db - MongoDB Atlas');

@@ -1,0 +1,6 @@
+*.log
+/AWS/*
+*.vscode
+/node_modules/*
+temp*
+.env

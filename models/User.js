@@ -9,25 +9,19 @@ const UserSchema = mongoose.Schema({
         type: Date
     },
     email: {
-        type: String,
-        unique: true,
-        required: true
+        type: String
     },
     password: {
-        type: String,
-        required: true
+        type: String
     },
     avatar: {
         type: String
     },
     driverslicense: {
-        type: String,
-        unique: true,
-        required: false
+        type: String
     },
     licenseplate: {
-        type: String,
-        required: false
+        type: String
     },
     data: [new mongoose.Schema({
         _id: false,
