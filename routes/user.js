@@ -22,12 +22,29 @@ router.get('/', async (req, res) => {
     console.log('...after GET route called - Users...');
 });
 
-//gets back specific machine's data based on machine_id
-router.get('/:userId', async (req, res) => {
+//gets back specific id based on drivers license
+router.get('/driverslicense/:userId', async (req, res) => {
     try {
-        console.log('MiD: ' + req.params.userId);
+        console.log('DriversLicense_ID: ' + req.params.userId);
         const specificUser = await User.find({
-            machine_id: req.params.userId
+            driverslicense: req.params.userId
+        }).sort({
+            date: 1
+        });
+        res.json(specificUser);
+    } catch (err) {
+        res.json({
+            message: err
+        });
+    }
+});
+
+//gets back specific id based on email
+router.get('/email/:userId', async (req, res) => {
+    try {
+        console.log('Email_ID: ' + req.params.userId);
+        const specificUser = await User.find({
+            email: req.params.userId
         }).sort({
             date: 1
         });

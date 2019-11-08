@@ -1,0 +1,384 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-color: #000709;
+	font-family: futura-pt, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h1 {
+	/* font-family: futura-pt, "Trebuchet MS", Arial, sans-serif; */
+	color: white;
+	display: flex;
+	padding-top: 1em;
+	justify-content: center;
+	align-content: center;
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+#container {
+	display: block;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	height: 100%;
+	/* background-color: blue; */
+	background-image: url('images/background2.jpg');
+	background-position: top;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	text-align: center;
+}
+
+a,
+a:hover,
+a:visited,
+a:link,
+a:active {
+	color: white;
+}
+#heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 4em;
+	width: 100%;
+	height: 20%;
+}
+
+#content {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	width: 100%;
+	height: 100%;
+	/* background-color: black; */
+	flex-wrap: nowrap;
+	margin: 0 auto;
+}
+
+#navigation {
+	/* display: inline-block; */
+	width: 81%;
+	margin: 0 auto;
+}
+
+#personal {
+	/* display: inline-block; */
+	width: 77%;
+	margin: 0 auto;
+}
+
+#login {
+	display: flex;
+	flex-flow: row wrap;
+	/* align-content: center; */
+	color: white;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	border: none;
+	/* background-color: lightblue; */
+}
+
+#password {
+	display: flex;
+	flex-flow: row wrap;
+	/* align-content: center; */
+	color: white;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	border: none;
+	/* background-color: lightblue; */
+}
+
+#login-box {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: left;
+	text-align: left;
+	padding-left: 12px;
+	width: 30%;
+	height: 100%;
+	/* background-color: black; */
+}
+#vehicle-info-box {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: center;
+	text-align: left;
+	width: 50%;
+	/* background-color: black; */
+}
+#vehicle-info-box p {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}
+
+#vehicle-diagnostics-box {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: center;
+	text-align: left;
+	width: 80%;
+	/* background-color: black; */
+}
+
+#vehicle-diagnostics-split-box-1 {
+	flex-flow: column wrap;
+	align-content: center;
+	justify-content: center;
+	width: 24%;
+	/* background-color: black; */
+}
+#vehicle-diagnostics-split-box-2 {
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: center;
+	text-align: left;
+	width: 74%;
+	/* background-color: blue; */
+	/* background-color: black; */
+}
+#vehicle-diagnostics-split-box-2-info {
+	padding-left: 22px;
+	width: 85%;
+}
+#vehicle-diagnostics-split-box-2-info-1 {
+	padding: 22px;
+	border-bottom: grey .1em solid;
+}
+#password-box {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: left;
+	text-align: left;
+	padding-left: 12px;
+	width: 30%;
+	height: 100%;
+	/* background-color: black; */
+}
+
+#login-text {
+	font-size: 2em;
+	/* font-family: futura-pt, "Trebuchet MS", Arial, sans-serif; */
+	/* width: 100%; */
+	text-align: left;
+	align-content: left;
+	justify-content: left;
+	color: white;
+	/* margin-bottom: 22px; */
+}
+
+#first-time-user-text {
+	font-size: 1em;
+	/* font-family: futura-pt, "Trebuchet MS", Arial, sans-serif; */
+	width: 100%;
+	text-align: center;
+	align-content: left;
+	/* margin-bottom: 22px; */
+}
+
+#form-login {
+	/* padding-left: 1em; */
+	width: 100%;
+	height: 100%;
+	align-content: center;
+	text-align: center;
+}
+
+#form-change-password {
+	/* padding-left: 1em; */
+	width: 100%;
+	height: 100%;
+	align-content: center;
+	text-align: center;
+}
+
+#form-create-account {
+	/* padding-left: 1em; */
+	width: 100%;
+	height: 100%;
+	align-content: center;
+	text-align: center;
+}
+
+input[type=text],
+input[type=button],
+input[type=password],
+input[type=submit] {
+	font-size: 1.5em;
+	font-weight: 400;
+	width: 100%;
+	height: 100%;
+	padding: 8px 8px;
+	margin-top: 12px;
+	box-sizing: border-box;
+	border: 1px solid white;
+	background-color: transparent;
+	width: 100%;
+	color: white;
+}
+
+#form-login-button {
+	align-content: center;
+	width: auto;
+	height: 2em;
+	background-color: #25a9e0;
+	margin: 12px 6px;
+	border: none;
+	color: white;
+	font-size: 1.6em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#form-cancel-button {
+	align-content: center;
+	width: auto;
+	height: 2em;
+	background-color: #ff0000;
+	margin: 12px 6px;
+	border: none;
+	color: white;
+	font-size: 1.6em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#form-change-password-button {
+	align-content: center;
+	width: auto;
+	height: 2em;
+	background-color: #25a9e0;
+	margin: 12px 6px;
+	border: none;
+	color: white;
+	font-size: 1.6em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#form-table-change-content {
+	/* padding-left: 1em; */
+	width: 100%;
+	height: 100%;
+	align-content: center;
+}
+
+#table-name {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: left;
+	flex-wrap: wrap;
+
+	color: #fff;
+	width: 100%;
+	font-size: 1em;
+}
+#table-name-home,
+#table-name-work {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	text-align: left;
+	flex-wrap: wrap;
+
+	color: #fff;
+	width: 100%;
+	font-size: 1.7em;
+}
+.table-personal-info {
+	text-align: left;
+	align-items: left;
+	width: 45%;
+	justify-content: space-evenly;
+	color: #fff;
+	font-size: 1.5em;
+}
+
+.table-column-content {
+	text-align: left;
+	align-items: left;
+	padding-left: 0%;
+	margin: auto;
+}
+.table-column-content2 {
+	text-align: left;
+	align-items: left;
+	padding-left: 2%;
+	margin: auto;
+}
+
+input[class='personal-input'] {
+	font-size: .8em;
+	font-weight: 400;
+	width: 100%;
+	height: 100%;
+	padding: 8px 8px;
+	margin-top: 12px;
+	box-sizing: border-box;
+	border: 1px solid white;
+	background-color: transparent;
+	width: 97%;
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	/* border: 1px dotted red; */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	/* background-color: lightblue; */
+}
+
+li {
+	/* border: 1px solid black; */
+	margin: 3em;
+	padding: .8em;
+}
+
+/* #container::after {
+    content: ' ';
+    width: 100%;
+} */
+.break {
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-basis: 100%;
+	width: 100%;
+	height: 1em;
+}
+
+hr {
+	width: 100%;
+}
+#container:after {
+	content: "";
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	bottom: 0;
+	left: 0;
+	pointer-events: none;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 7, 9, 1) 90%);
+	width: 100%;
+	height: 4em;
+}
